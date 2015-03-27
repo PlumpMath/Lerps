@@ -14,9 +14,7 @@ function MoveOver() {
   
   
   while(t < 1) {
-    // startPoint * (1-t) + endPoint * t
     transform.position = startPoint * (1 - Mathf.Pow(t, 2)) + endPoint * Mathf.Pow(t, 2);
-    // transform.position = startPoint * (1 - t) + endPoint * t;
     t += 0.5 * Time.deltaTime;
     yield;
   }
